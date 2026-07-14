@@ -1,0 +1,20 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Allow read/write access to all collections to support both
+    // real Google Auth users and the local credentials-based Admin (Kadu2026 / Admin)
+    
+    match /usuarios/{userId} {
+      allow read, write: if true;
+    }
+
+    match /votos/{userId} {
+      allow read, write: if true;
+    }
+
+    match /participantes/{docId} {
+      allow read, write: if true;
+    }
+  }
+}

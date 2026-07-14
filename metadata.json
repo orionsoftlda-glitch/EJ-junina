@@ -1,0 +1,6 @@
+{
+  "name": "Prêmio da Quadrilha",
+  "description": "Votação interativa e divertida para premiar os destaques da temporada da quadrilha junina.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
